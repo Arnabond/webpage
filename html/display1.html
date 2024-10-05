@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display User Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .info {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Information</h1>
+
+    <div class="info" id="nameInfo"></div>
+    <div class="info" id="genderInfo"></div>
+    <div class="info" id="mobileInfo"></div>
+    <div class="info" id="emailInfo"></div>
+    <div class="info" id="cityInfo"></div>
+    <div class="info" id="stateInfo"></div>
+    <div class="info" id="countryInfo"></div>
+
+    <script>
+        // Fetch data from localStorage and display it
+        document.getElementById('nameInfo').innerText = "Name: " + localStorage.getItem('name');
+        document.getElementById('genderInfo').innerText = "Gender: " + localStorage.getItem('gender');
+        document.getElementById('mobileInfo').innerText = "Mobile Number: " + localStorage.getItem('mobile');
+        document.getElementById('emailInfo').innerText = "Mail ID: " + localStorage.getItem('email');
+        document.getElementById('cityInfo').innerText = "City: " + localStorage.getItem('city');
+        document.getElementById('stateInfo').innerText = "State: " + localStorage.getItem('state');
+        document.getElementById('countryInfo').innerText = "Country: " + localStorage.getItem('country');
+    </script>
+</body>
+</html>

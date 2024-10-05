@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Visualization</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <video id="video" autoplay playsinline></video>
+        <canvas id="canvas"></canvas>
+        <div class="controls">
+            <label for="filterSelect">Choose Filter:</label>
+            <select id="filterSelect">
+                <option value="none">None</option>
+                <option value="sunglasses">Sunglasses</option>
+                <option value="hat">Hat</option>
+            </select>
+        </div>
+        <div class="footer">
+            <h1>AR Visualization</h1>
+            <p>Developed by Arnab Mondal</p>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
